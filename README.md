@@ -1,4 +1,4 @@
-# GuangDong
+# Guangdong WRF-CMAQ
 
 > 广东省空气质量多尺度模拟与评估 — CMAQ/WRF 建模、排放处理、气象-化学校验
 
