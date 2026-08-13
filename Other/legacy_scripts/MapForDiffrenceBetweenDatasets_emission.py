@@ -68,16 +68,16 @@ VARIABLE_CONFIGS = {
 CMAQ_COMPARISON_CONFIGS = [
     # 相同清单，气象变化[2023年为基准]
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',  # 2000年1月
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2023met]_01.csv',  # 2023年1月，同气象
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',  # 2000年1月
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2023met]_01.csv',  # 2023年1月，同气象
     #     2000,        # 文件1对应年份
     #     2023,        # 文件2对应年份
     #     '2000e2000m_2000e2023m_Jan'  # 输出文件后缀
     # ],
 
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',  # 2000年1月
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2023met]_07.csv',  # 2023年1月，同气象
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',  # 2000年1月
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2023met]_07.csv',  # 2023年1月，同气象
     #     2000,        # 文件1对应年份
     #     2023,        # 文件2对应年份
     #     '2000e2000m_2000e2023m_Jul'  # 输出文件后缀
@@ -85,15 +85,15 @@ CMAQ_COMPARISON_CONFIGS = [
     
     # # 相同清单，气象变化[2023年为基准]
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',  # 2000年7月
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2000met]_07.csv',  # 2023年7月，同气象
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',  # 2000年7月
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2000met]_07.csv',  # 2023年7月，同气象
     #     2000,        # 文件1对应年份
     #     2023,        # 文件2对应年份
     #     '2000e2000m_2023e2000m_Jul'  # 输出文件后缀
     # ],
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',  # 2000年7月
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2000met]_01.csv',  # 2023年7月，同气象
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',  # 2000年7月
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2000met]_01.csv',  # 2023年7月，同气象
     #     2000,        # 文件1对应年份
     #     2023,        # 文件2对应年份
     #     '2000e2000m_2023e2000m_Jan'  # 输出文件后缀
@@ -102,16 +102,16 @@ CMAQ_COMPARISON_CONFIGS = [
 
     # CMAQ模拟效果2060
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2060_Emission[2060met]_07.csv',  # 2000年7月，2023气象
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',  # 2023年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2060_Emission[2060met]_07.csv',  # 2000年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',  # 2023年7月，2023气象
         2060,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2060e2060m_2023e2023m_Jul'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2060_Emission[2060met]_01.csv',  # 2000年7月，2023气象
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',  # 2023年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2060_Emission[2060met]_01.csv',  # 2000年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',  # 2023年7月，2023气象
         2060,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2060e2060m_2023e2023m_Jan'  # 输出文件后缀
@@ -119,16 +119,16 @@ CMAQ_COMPARISON_CONFIGS = [
 
     # CMAQ模拟效果2030
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2030_Emission[2030met]_07.csv',  # 2000年7月，2023气象
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',  # 2023年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2030_Emission[2030met]_07.csv',  # 2000年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',  # 2023年7月，2023气象
         2030,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2030e2030m_2023e2023m_Jul'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2030_Emission[2030met]_01.csv',  # 2000年7月，2023气象
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',  # 2023年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2030_Emission[2030met]_01.csv',  # 2000年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',  # 2023年7月，2023气象
         2030,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2030e2030m_2023e2023m_Jan'  # 输出文件后缀
@@ -136,16 +136,16 @@ CMAQ_COMPARISON_CONFIGS = [
 
      # CMAQ模拟效果2000
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',  # 2000年7月，2023气象
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',  # 2023年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',  # 2000年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',  # 2023年7月，2023气象
         2000,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2000e2000m_2023e2023m_Jul'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',  # 2000年7月，2023气象
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',  # 2023年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',  # 2000年7月，2023气象
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',  # 2023年7月，2023气象
         2000,        # 文件1对应年份
         2000,        # 文件2对应年份
         '2000e2000m_2023e2023m_Jan'  # 输出文件后缀
@@ -453,9 +453,9 @@ def main():
     print("=" * 70)
 
     # === 配置参数 ===
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-    BOUNDARY_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
-    SAVE_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/Emission_Comparison_Plots"
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    BOUNDARY_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+    SAVE_DIR = "/data/workspace/GuangDong/Emission_Comparison_Plots"
 
     # 选择要处理的变量
     # VARIABLES_TO_PROCESS = ['O3', 'PM2.5', 'O3_Days', 'PM2.5_Days']
