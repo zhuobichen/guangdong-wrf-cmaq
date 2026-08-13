@@ -3,7 +3,7 @@
 > 目标：对气象站点 MCIP 校验工作流进行 Core+Run 分层重构
 > 版本: 2026-05 (v1)
 > 基准参考: `GuangDong/docs/GuangDong项目架构规范_Core+Run分层设计.md`
-> 项目路径: `/DeepLearning/mnt/shixiansheng/GuangDong/气象站点`
+> 项目路径: `/data/workspace/GuangDong/气象站点`
 
 ---
 
