@@ -223,8 +223,8 @@ def main():
     TARGET_MONTHS = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
     
     # 路径配置
-    GD_DATA_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist"        # 广东数据目录
-    SAVE_PATH = "/DeepLearning/mnt/shixiansheng/GuangDong/Emission_Comparison_BoxPlots"  # 结果保存路径
+    GD_DATA_DIR = "/data/workspace/GuangDong/emissionlist"        # 广东数据目录
+    SAVE_PATH = "/data/workspace/GuangDong/Emission_Comparison_BoxPlots"  # 结果保存路径
     CSV_PATH = os.path.join(GD_DATA_DIR, "GuangDong_2000_2023_2030_2060_原始清单排放量千吨_年度.csv")
 
     # 加载分配后千吨数据（新增返回是否有月度数据）
