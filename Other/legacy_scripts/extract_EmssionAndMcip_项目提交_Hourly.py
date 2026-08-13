@@ -228,60 +228,60 @@ def main():
     FILE_CONFIGS = [
         #Case2 2000e2023met (小时级)
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case2_7月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case2_7月.nc"
         },
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case2_1月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case2_1月.nc"
         },
         #Case4 2023e2000m (小时级)
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case4_7月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case4_7月.nc"
         },
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case4_1月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case4_1月.nc"
         },
 
         #Case3 2023e2023m (小时级)
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case3_7月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case3_7月.nc"
         },
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case3_1月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case3_1月.nc"
         },
 
         #Case1 2000e2000m (小时级)
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case1_7月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case1_7月.nc"
         },
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case1_1月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case1_1月.nc"
         },
         #Case5 2060e2060m (小时级)
         {
-        'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2060-06-26_2060-07-31_18species.nc",
-        'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case5_7月.nc"
+        'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2060-06-26_2060-07-31_18species.nc",
+        'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case5_7月.nc"
         },
         {
-            'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2059-12-27_2060-01-31_18species.nc",
-            'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case5_1月.nc"
+            'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2059-12-27_2060-01-31_18species.nc",
+            'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case5_1月.nc"
         },
 
         #Case6 2030e2030m (小时级)
         {
-        'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2030-06-26_2030-07-31_18species.nc",
-        'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case6_7月.nc"
+        'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2030-06-26_2030-07-31_18species.nc",
+        'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case6_7月.nc"
         },
         {
-        'input_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2029-12-27_2030-01-31_18species.nc",
-        'output_nc_file': "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly/extracted_Case6_1月.nc"
+        'input_nc_file': "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2029-12-27_2030-01-31_18species.nc",
+        'output_nc_file': "/data/workspace/GuangDong/cmaq_项目提交_hourly/extracted_Case6_1月.nc"
         },
     ]
     
@@ -342,7 +342,7 @@ def main():
     print("\n开始提取变量到新的nc文件...")
     
     # 确保输出目录存在
-    output_dir = "/DeepLearning/mnt/shixiansheng/GuangDong/cmaq_项目提交_hourly"
+    output_dir = "/data/workspace/GuangDong/cmaq_项目提交_hourly"
     os.makedirs(output_dir, exist_ok=True)
     
     # 处理每个文件配置
