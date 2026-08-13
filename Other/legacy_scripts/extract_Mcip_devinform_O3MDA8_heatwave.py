@@ -27,7 +27,7 @@ TEMP_STANDARD = 35.0    # 温度超标标准（高温预警：35 °C）
 HEATWAVE_DAYS = 3       # 热浪定义：连续HEATWAVE_DAYS天最高气温超过TEMP_STANDARD
 
 # 惠州区域过滤配置
-HUIZHOU_FLAG_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州Flag文件路径
+HUIZHOU_FLAG_FILE = "/data/workspace/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州Flag文件路径
 
 # --------------------------------------------------
 # 文件配置类
@@ -89,11 +89,11 @@ def generate_file_configs(year: int, months: List[int]) -> List[FileConfig]:
 
         # 构建 input_nc_file 路径
         if year == 2000:
-            input_nc = f"/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_{year}met_2023emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
+            input_nc = f"/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_{year}met_2023emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
         elif year == 2023:
-            input_nc = f"/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_{year}met_2000emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
+            input_nc = f"/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_{year}met_2000emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
         else:
-            input_nc = f"/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_{year}_GD_layer_1_{start_date}_{end_date}_18species.nc"
+            input_nc = f"/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_{year}_GD_layer_1_{start_date}_{end_date}_18species.nc"
 
         output_name = f"{year}_mcipout_{month:02d}"
         config = FileConfig(
@@ -433,7 +433,7 @@ def main():
     print("开始气象数据提取（热浪分析版）")
     print("="*80)
 
-    base_dir = "/DeepLearning/mnt/shixiansheng/GuangDong"
+    base_dir = "/data/workspace/GuangDong"
 
     # 预加载惠州标志（如果需要）
     huizhou_flag = None
