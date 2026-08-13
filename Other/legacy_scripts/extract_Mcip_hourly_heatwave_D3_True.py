@@ -32,7 +32,7 @@ UTC_OFFSET_HOURS = 8    # 北京时间比UTC快8小时
 USE_LOCAL_TIME = True   # 是否使用本地时间（中国时区）进行高温判断
 
 # 惠州区域过滤配置
-HUIZHOU_FLAG_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州Flag文件路径
+HUIZHOU_FLAG_FILE = "/data/workspace/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州Flag文件路径
 
 # 小时数据完整性控制
 ALLOW_NON_24H = False   # 若为 False，则总小时数必须是24的整数倍，否则报错
@@ -95,11 +95,11 @@ def generate_file_configs(year: int, months: List[int]) -> List[FileConfig]:
         end_date = f"{end_year}-{end_month:02d}-{end_day}"
 
         if year == 2000:
-            input_nc = f"/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
+            input_nc = f"/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
         elif year == 2023:
-            input_nc = f"/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
+            input_nc = f"/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_{start_date}_{end_date}_18species.nc"
         else:
-            input_nc = f"/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_{year}_GD_layer_1_{start_date}_{end_date}_18species.nc"
+            input_nc = f"/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_ssp126_{year}_GD_layer_1_{start_date}_{end_date}_18species.nc"
 
         output_name = f"{year}_mcipout_{month:02d}"
         config = FileConfig(
@@ -500,7 +500,7 @@ def main():
     print("开始气象数据提取（小时级热浪分析版）")
     print("="*80)
 
-    base_dir = "/DeepLearning/mnt/shixiansheng/GuangDong"
+    base_dir = "/data/workspace/GuangDong"
 
     all_processed_files = []
     for i, file_config in enumerate(FILE_CONFIGS):
