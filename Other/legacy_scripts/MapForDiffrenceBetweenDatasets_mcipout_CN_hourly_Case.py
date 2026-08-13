@@ -117,8 +117,8 @@ VARIABLE_CONFIGS = {
 # === 数据对比配置（Case1 - Case3，即 2000 - 2023，hourly 数据目录）===
 COMPARISON_CONFIGS = [
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed_hourly/2000_mcipout_07.csv',
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed_hourly/2023_mcipout_07.csv',
+        '/data/workspace/GuangDong/mcipout_processed_hourly/2000_mcipout_07.csv',
+        '/data/workspace/GuangDong/mcipout_processed_hourly/2023_mcipout_07.csv',
         'Case1', 'Case3',
         'Case1_minus_Case3'
     ],
@@ -370,9 +370,9 @@ def main():
     print("气象变量差异图批量绘制 — Hourly Case 版本（Case1 vs Case3）")
     print("=" * 70)
 
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-    BOUNDARY_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
-    SAVE_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/Mcip_Comparison_Plots_Hourly_Case"
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    BOUNDARY_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+    SAVE_DIR = "/data/workspace/GuangDong/Mcip_Comparison_Plots_Hourly_Case"
 
     # 默认处理热浪天数（小时级覆盖）
     VARIABLES_TO_PROCESS = ['Heatwave_Days']
