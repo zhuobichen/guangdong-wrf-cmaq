@@ -36,11 +36,11 @@ import xarray as xr
 from pyproj import Transformer, CRS
 
 # 配置参数
-BASE_DATA_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist"
-OUTPUT_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist"
-OUTPUT_DIR_HUIZHOU = "/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist_HuiZhou"
-PROVINCES_JSON = "/DeepLearning/mnt/shixiansheng/GuangDong/China_provinces.json"
-HUIZHOU_FLAG_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/HuiZhou_2000121_GuangDongD3.nc"
+BASE_DATA_DIR = "/data/workspace/GuangDong/emissionlist"
+OUTPUT_DIR = "/data/workspace/GuangDong/emissionlist"
+OUTPUT_DIR_HUIZHOU = "/data/workspace/GuangDong/emissionlist_HuiZhou"
+PROVINCES_JSON = "/data/workspace/GuangDong/China_provinces.json"
+HUIZHOU_FLAG_FILE = "/data/workspace/GuangDong/HuiZhou_2000121_GuangDongD3.nc"
 
 # 2030年特殊配置 - 从2000年文件夹读取
 SPECIAL_2030_DIR = "GD2000"
