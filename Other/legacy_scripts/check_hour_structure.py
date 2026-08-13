@@ -14,7 +14,7 @@ def check_hour_structure():
     """检查小时数据结构"""
 
     # 测试文件路径
-    test_file = "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_2000-06-26_2000-07-31_18species.nc"
+    test_file = "/data/workspace/GuangDong/cmaqout/COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_2000-06-26_2000-07-31_18species.nc"
 
     print(f"检查文件: {test_file}")
 
