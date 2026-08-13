@@ -26,10 +26,10 @@ from pyproj import CRS, Transformer
 # 配置参数
 # --------------------------------------------------
 # 惠州区域过滤配置
-HUIZHOU_FLAG_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州 Flag文件路径
+HUIZHOU_FLAG_FILE = "/data/workspace/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州 Flag文件路径
 
 # 广东省边界（用于计算“广东区域平均”）
-GUANGDONG_PROVINCES_JSON = "/DeepLearning/mnt/shixiansheng/GuangDong/China_provinces.json"
+GUANGDONG_PROVINCES_JSON = "/data/workspace/GuangDong/China_provinces.json"
 
 
 # --------------------------------------------------
@@ -47,11 +47,11 @@ class FileConfig:
 # --------------------------------------------------
 FILE_CONFIGS = [
     FileConfig(
-        input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2029-12-27_2030-01-31_18species.nc",
+        input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2029-12-27_2030-01-31_18species.nc",
         year=2030, month=1
     ),
     FileConfig(
-        input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2030-06-26_2030-07-31_18species.nc",
+        input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2030-06-26_2030-07-31_18species.nc",
         year=2030, month=7
     ),
 ]
@@ -423,7 +423,7 @@ def main():
     print("开始提取2030年1月和7月污染物数据")
     print("="*80)
 
-    base_dir = "/DeepLearning/mnt/shixiansheng/GuangDong"
+    base_dir = "/data/workspace/GuangDong"
     output_dir = os.path.join(base_dir, "cmaqout_processed")
     output_huizhou_dir = os.path.join(base_dir, "cmaqout_processed_HuiZhou")
     
