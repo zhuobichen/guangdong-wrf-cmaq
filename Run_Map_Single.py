@@ -29,7 +29,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 # 网格与边界文件
 MODEL_FILE = str(PROJECT_ROOT / "Data" / "Boundary" / "GRIDCRO2D_2000121_GuangDongD3")
-BOUNDARY_JSON = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+BOUNDARY_JSON = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
 
 # 数据源 → 输入目录 / 输出目录映射
 SOURCE_MAP = {
