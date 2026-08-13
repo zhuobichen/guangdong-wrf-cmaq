@@ -29,7 +29,7 @@ O3_STANDARD = 80.0     # O3日最大8小时均值超标标准（简化处理：�
 TEMP_STANDARD = 35.0    # 温度超标标准（高温预警：35 °C）
 
 # 惠州区域过滤配置
-HUIZHOU_FLAG_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州Flag文件路径
+HUIZHOU_FLAG_FILE = "/data/workspace/GuangDong/HuiZhou_2000121_GuangDongD3.nc"  # 惠州Flag文件路径
 
 # --------------------------------------------------
 # 文件配置类
@@ -53,28 +53,28 @@ FILE_CONFIGS = [
     # 基础配置 - 应用惠州过滤（非惠州网格设为NaN）
     #Case2 2000e2023met
     FileConfig(
-        input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
+        input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
         output_emission_name="2000_Emission[2023met]_07",
         output_meteo_name="2023_mcipout_07",
         year=2000, month=7, apply_huizhou_filter=True
     ),
     # 惠州区域配置 - 应用惠州过滤（非惠州网格设为NaN）
     FileConfig(
-        input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
+        input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
         output_emission_name="2000_Emission[2023met]_01",
         output_meteo_name="2023_mcipout_01",
         year=2000, month=1, apply_huizhou_filter=True
     ),
     #Case4 2023e2000m
     FileConfig(
-        input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
+        input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
         output_emission_name="2023_Emission[2000met]_07",
         output_meteo_name="2000_mcipout_07_2023Emission",
         year=2023, month=7, apply_huizhou_filter=True
     ),
 
     FileConfig(
-        input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
+        input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
         output_emission_name="2023_Emission[2000met]_01",
         output_meteo_name="2000_mcipout_01_2023Emission",
         year=2023, month=1, apply_huizhou_filter=True
@@ -86,20 +86,20 @@ FILE_CONFIGS = [
 # FILE_CONFIGS = [
     # 基础配置 - 应用惠州过滤（非惠州网格设为NaN）
     # FileConfig(
-    #     input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
+    #     input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
     #     output_emission_name="2000_Emission[2000met]_07",
     #     output_meteo_name="2000_mcipout_07",
     #     year=2000, month=7, apply_huizhou_filter=True
     # ),
     # 惠州区域配置 - 应用惠州过滤（非惠州网格设为NaN）
     # FileConfig(
-    #     input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
+    #     input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2023met_2000emis_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
     #     output_emission_name="2000_Emission[2023met]_01",
     #     output_meteo_name="2023_mcipout_01",
     #     year=2023, month=1, apply_huizhou_filter=True
     # ),
     # FileConfig(
-    #     input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
+    #     input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_2000met_2023emis_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
     #     output_emission_name="2023_Emission[2000met]_01",
     #     output_meteo_name="2000_mcipout_01",
     #     year=2000, month=1, apply_huizhou_filter=True
@@ -110,53 +110,53 @@ FILE_CONFIGS = [
 # FILE_CONFIGS = [
 #     # 基础配置 - 应用惠州过滤（非惠州网格设为NaN）
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_1999-12-27_2000-01-31_18species.nc",
 #         output_emission_name="2000_Emission[2000met]_01",
 #         output_meteo_name="2000_mcipout_01",
 #         year=2000, month=1, apply_huizhou_filter=True
 #     ),
 #     # 惠州区域配置 - 应用惠州过滤（非惠州网格设为NaN）
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2000_GD_layer_1_2000-06-26_2000-07-31_18species.nc",
 #         output_emission_name="2000_Emission[2000met]_07",
 #         output_meteo_name="2000_mcipout_07",
 #         year=2000, month=7, apply_huizhou_filter=True
 #     ),
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2022-12-27_2023-01-31_18species.nc",
 #         output_emission_name="2023_Emission[2023met]_01",
 #         output_meteo_name="2023_mcipout_01",
 #         year=2023, month=1, apply_huizhou_filter=True
 #     ),
 #     # # 惠州区域配置 - 应用惠州过滤（非惠州网格设为NaN）
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2023_GD_layer_1_2023-06-26_2023-07-31_18species.nc",
 #         output_emission_name="2023_Emission[2023met]_07",
 #         output_meteo_name="2023_mcipout_07",
 #         year=2023, month=7, apply_huizhou_filter=True
 #     ),
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2029-12-27_2030-01-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2029-12-27_2030-01-31_18species.nc",
 #         output_emission_name="2030_Emission[2030met]_01",
 #         output_meteo_name="2030_mcipout_01",
 #         year=2030, month=1, apply_huizhou_filter=True
 #     ),
 #     # 惠州区域配置 - 应用惠州过滤（非惠州网格设为NaN）
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2030-06-26_2030-07-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2030_GD_layer_1_2030-06-26_2030-07-31_18species.nc",
 #         output_emission_name="2030_Emission[2030met]_07",
 #         output_meteo_name="2030_mcipout_07",
 #         year=2030, month=7, apply_huizhou_filter=True
 #     ),
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2059-12-27_2060-01-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2059-12-27_2060-01-31_18species.nc",
 #         output_emission_name="2060_Emission[2060met]_01",
 #         output_meteo_name="2060_mcipout_01",
 #         year=2060, month=1, apply_huizhou_filter=True
 #     ),
 
 #     FileConfig(
-#         input_nc_file="/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2060-06-26_2060-07-31_18species.nc",
+#         input_nc_file="/data/workspace/GuangDong/cmaqout/Daily_COMBINE_ACONC_v54_D3_ssp126_2060_GD_layer_1_2060-06-26_2060-07-31_18species.nc",
 #         output_emission_name="2060_Emission[2060met]_07",
 #         output_meteo_name="2060_mcipout_07",
 #         year=2060, month=7, apply_huizhou_filter=True
@@ -543,7 +543,7 @@ def main():
     print("开始综合数据提取（多文件版）")
     print("="*80)
 
-    base_dir = "/DeepLearning/mnt/shixiansheng/GuangDong"
+    base_dir = "/data/workspace/GuangDong"
 
     # 预加载惠州标志（如果需要）
     huizhou_flag = None
