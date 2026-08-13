@@ -36,16 +36,16 @@ PM25_VARIABLE_CONFIG = {
 EMISSION_COMPARISON_CONFIGS = [
     # 2000年 vs 2030年 对比
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_200001_PM2.5.csv',  # 2000年1月
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202301_PM2.5.csv',  # 2030年1月
+        '/data/workspace/GuangDong/emissionlist/EM_200001_PM2.5.csv',  # 2000年1月
+        '/data/workspace/GuangDong/emissionlist/EM_202301_PM2.5.csv',  # 2030年1月
         2000,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2000_minus_2023_Jan'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_200007_PM2.5.csv',  # 2000年7月
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202307_PM2.5.csv',  # 2023年7月
+        '/data/workspace/GuangDong/emissionlist/EM_200007_PM2.5.csv',  # 2000年7月
+        '/data/workspace/GuangDong/emissionlist/EM_202307_PM2.5.csv',  # 2023年7月
         2000,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2000_minus_2023_Jul'  # 输出文件后缀
@@ -53,32 +53,32 @@ EMISSION_COMPARISON_CONFIGS = [
 
     # 2030年 vs 2000年 对比（反方向）
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_203001_PM2.5.csv',  # 2030年1月
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202301_PM2.5.csv',  # 2000年1月
+        '/data/workspace/GuangDong/emissionlist/EM_203001_PM2.5.csv',  # 2030年1月
+        '/data/workspace/GuangDong/emissionlist/EM_202301_PM2.5.csv',  # 2000年1月
         2030,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2030_minus_2023_Jan'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_203007_PM2.5.csv',  # 2030年7月
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202307_PM2.5.csv',  # 2000年7月
+        '/data/workspace/GuangDong/emissionlist/EM_203007_PM2.5.csv',  # 2030年7月
+        '/data/workspace/GuangDong/emissionlist/EM_202307_PM2.5.csv',  # 2000年7月
         2030,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2030_minus_2023_Jul'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_206007_PM2.5.csv',  # 2030年7月
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202307_PM2.5.csv',  # 2000年7月
+        '/data/workspace/GuangDong/emissionlist/EM_206007_PM2.5.csv',  # 2030年7月
+        '/data/workspace/GuangDong/emissionlist/EM_202307_PM2.5.csv',  # 2000年7月
         2060,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2060_minus_2023_Jul'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_206001_PM2.5.csv',  # 2030年1月
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202301_PM2.5.csv',  # 2000年1月
+        '/data/workspace/GuangDong/emissionlist/EM_206001_PM2.5.csv',  # 2030年1月
+        '/data/workspace/GuangDong/emissionlist/EM_202301_PM2.5.csv',  # 2000年1月
         2060,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2060_minus_2023_Jan'  # 输出文件后缀
@@ -86,8 +86,8 @@ EMISSION_COMPARISON_CONFIGS = [
 
     # 如果有其他年份对比，可以继续添加
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_201001_PM2.5.csv',  # 2010年1月
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_200001_PM2.5.csv',  # 2000年1月
+    #     '/data/workspace/GuangDong/emissionlist/EM_201001_PM2.5.csv',  # 2010年1月
+    #     '/data/workspace/GuangDong/emissionlist/EM_200001_PM2.5.csv',  # 2000年1月
     #     2010,        # 文件1对应年份
     #     2000,        # 文件2对应年份
     #     '2010_minus_2000_Jan'  # 输出文件后缀
@@ -360,9 +360,9 @@ def main():
     print("=" * 70)
 
     # === 配置参数 ===
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-    BOUNDARY_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
-    SAVE_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/PeopleEmission_Plots"
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    BOUNDARY_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+    SAVE_DIR = "/data/workspace/GuangDong/PeopleEmission_Plots"
 
     print(f"PM2.5排放变量: PM2.5 (Monthly Average)")
     print(f"文件对比数量: {len(EMISSION_COMPARISON_CONFIGS)}")
