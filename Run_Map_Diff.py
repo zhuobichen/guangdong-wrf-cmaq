@@ -24,7 +24,7 @@ from Core_Map import run_diff_map_pipeline
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 MODEL_FILE = str(PROJECT_ROOT / "Data" / "Boundary" / "GRIDCRO2D_2000121_GuangDongD3")
-BOUNDARY_JSON = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+BOUNDARY_JSON = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
 
 # CMAQ 数据目录
 CMAQ_DATA_DIR = str(PROJECT_ROOT / "Data" / "Processed" / "CMAQ")
