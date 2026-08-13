@@ -45,7 +45,7 @@ MONTH_MAPPING = {f"{i:02d}": f"{i}月" for i in range(1, 13)}
 # ============================
 # Emission 数据配置
 # ============================
-EMISSION_DATA_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed_GuangDong")
+EMISSION_DATA_DIR = Path("/data/workspace/GuangDong/cmaqout_processed_GuangDong")
 EMISSION_FILE_SUFFIX = "_GuangDong"
 GRID_AREA_KM2 = 3.0 * 3.0
 
@@ -68,7 +68,7 @@ EMISSION_VARIABLES = {
 # ============================
 # Mcipout 数据配置
 # ============================
-MCIPOUT_DATA_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed_hourly_land")
+MCIPOUT_DATA_DIR = Path("/data/workspace/GuangDong/mcipout_processed_hourly_land")
 MCIPOUT_FILENAME_TEMPLATE = "{year}_mcipout_{month}_land.csv"
 MCIPOUT_COLUMN = "Heatwave_Days"
 MCIPOUT_MONTH_CODE = "07"
@@ -80,7 +80,7 @@ MCIPOUT_VARIABLE = {
 }
 
 # Output
-BASE_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong")
+BASE_DIR = Path("/data/workspace/GuangDong")
 OUTPUT_DIR = BASE_DIR / "BarCharts_Output_Combined"
 
 
