@@ -56,14 +56,14 @@ Case_COLORS = {
 MONTH_MAPPING = {f"{i:02d}": f"{i}月" for i in range(1, 13)}
 
 # 数据目录：使用已做广东省掩膜的结果（省外为NaN）
-DATA_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed_GuangDong")
+DATA_DIR = Path("/data/workspace/GuangDong/cmaqout_processed_GuangDong")
 FILE_SUFFIX = "_GuangDong"
 
 # 网格面积（固定 3km × 3km）
 GRID_AREA_KM2 = 3.0 * 3.0
 
 # Output directory
-BASE_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong")
+BASE_DIR = Path("/data/workspace/GuangDong")
 OUTPUT_DIR = BASE_DIR / "BarCharts_Output_CaseComparison"
 
 # ============================
