@@ -13,10 +13,10 @@ Mask method follows `process_GDEI_ALL_True_AutoUnit.py`:
 
 Usage:
   python3 GuangDong/mask_cmaqout_processed_to_GuangDong.py \
-    --input_dir /DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed \
-    --output_dir /DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed_GuangDong \
-    --grid_file /DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3 \
-    --provinces_json /DeepLearning/mnt/shixiansheng/GuangDong/China_provinces.json
+    --input_dir /data/workspace/GuangDong/cmaqout_processed \
+    --output_dir /data/workspace/GuangDong/cmaqout_processed_GuangDong \
+    --grid_file /data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3 \
+    --provinces_json /data/workspace/GuangDong/China_provinces.json
 """
 
 from __future__ import annotations
