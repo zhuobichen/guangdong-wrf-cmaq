@@ -62,14 +62,14 @@ VARIABLE_MONTHS = {
 REGIONS = {
     'GuangDong': {
         'name': 'GuangDong',
-        'data_dir': Path("/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed"),
+        'data_dir': Path("/data/workspace/GuangDong/cmaqout_processed"),
         'file_suffix': '',
         'color': '#1f77b4',      # Blue
         'box_color': '#aec7e8'   # Light blue
     },
     'HuiZhou': {
         'name': 'HuiZhou',
-        'data_dir': Path("/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed_HuiZhou"),
+        'data_dir': Path("/data/workspace/GuangDong/cmaqout_processed_HuiZhou"),
         'file_suffix': '_HuiZhou',
         'color': '#ff7f0e',      # Orange
         'box_color': '#ffbb78'   # Light orange
@@ -88,7 +88,7 @@ def get_enabled_region_keys():
     return keys
 
 # Output directory
-BASE_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong")
+BASE_DIR = Path("/data/workspace/GuangDong")
 OUTPUT_DIR = BASE_DIR / "Boxplots_Output_CaseComparison"
 
 # ============================
