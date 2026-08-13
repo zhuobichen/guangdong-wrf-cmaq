@@ -494,11 +494,11 @@ if __name__ == "__main__":
     # -------------------------- 核心参数配置 --------------------------
     # 1. 基础路径配置
     # 输入：刚生成的月均2m温度CSV所在目录（文件名形如：d03_T2_monthly_mean_2030-07.csv）
-    ROOT_METRICS_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/wrfout_processed"
+    ROOT_METRICS_DIR = "/data/workspace/GuangDong/wrfout_processed"
     # MODEL_FILE：任意一个d03的wrfout文件，用于读取投影/经纬度网格
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/wrfout/2030_7/wrfout_d03_2030-07-14_12:00:00"
-    BOUNDARY_JSON_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json" # 边界文件
-    SAVE_ROOT_PATH = "/DeepLearning/mnt/shixiansheng/GuangDong/Wrfout_Alone_Plots_CN"  # 结果保存根目录
+    MODEL_FILE = "/data/workspace/GuangDong/wrfout/2030_7/wrfout_d03_2030-07-14_12:00:00"
+    BOUNDARY_JSON_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json" # 边界文件
+    SAVE_ROOT_PATH = "/data/workspace/GuangDong/Wrfout_Alone_Plots_CN"  # 结果保存根目录
 
     # 2. 年份与月份配置
     TARGET_YEARS = [2030]  # 需要处理的年份
