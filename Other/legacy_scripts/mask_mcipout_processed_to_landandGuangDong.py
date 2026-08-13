@@ -17,12 +17,12 @@ from pyproj import CRS, Transformer
 
 
 # Configuration: edit these paths as needed
-INPUT_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed")
-LAND_OUTPUT_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed_land")
-GUANGDONG_OUTPUT_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed_GuangDong")
-GRID_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-CHINA_JSON = "/DeepLearning/mnt/shixiansheng/GuangDong/china.json"
-PROVINCES_JSON = "/DeepLearning/mnt/shixiansheng/GuangDong/China_provinces.json"
+INPUT_DIR = Path("/data/workspace/GuangDong/mcipout_processed")
+LAND_OUTPUT_DIR = Path("/data/workspace/GuangDong/mcipout_processed_land")
+GUANGDONG_OUTPUT_DIR = Path("/data/workspace/GuangDong/mcipout_processed_GuangDong")
+GRID_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+CHINA_JSON = "/data/workspace/GuangDong/china.json"
+PROVINCES_JSON = "/data/workspace/GuangDong/China_provinces.json"
 FILE_LIMIT: int | None = None
 
 
