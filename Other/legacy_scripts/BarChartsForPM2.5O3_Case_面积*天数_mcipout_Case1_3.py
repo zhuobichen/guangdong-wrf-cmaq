@@ -57,7 +57,7 @@ Case_COLORS = {
 MONTH_CODE = "07"  # 7 月
 
 # 数据目录：使用已做陆地区域处理的结果（仅陆地）
-DATA_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed_hourly_land")
+DATA_DIR = Path("/data/workspace/GuangDong/mcipout_processed_hourly_land")
 FILENAME_TEMPLATE = "{year}_mcipout_{month}_land.csv"
 
 COLUMN = "Heatwave_Days"
@@ -66,7 +66,7 @@ COLUMN = "Heatwave_Days"
 GRID_AREA_KM2 = 3.0 * 3.0
 
 # Output directory
-BASE_DIR = Path("/DeepLearning/mnt/shixiansheng/GuangDong")
+BASE_DIR = Path("/data/workspace/GuangDong")
 OUTPUT_DIR = BASE_DIR / "BarCharts_Output_Heatwave"
 
 TITLE = "陆地热浪面积*天数（7月）"
