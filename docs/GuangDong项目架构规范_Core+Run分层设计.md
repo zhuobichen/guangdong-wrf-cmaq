@@ -3,7 +3,7 @@
 > 目标：对 GuangDong 项目进行 Core+Run 分层重构，消除混乱，建立可维护的模块化架构
 > 版本: 2026-05 (v1 - 初始架构设计)
 > 基准参考: `DataFusion_China_CleanAir/docs/DataFusion项目架构规范_Core+Run分层设计.md`
-> 项目路径: `/DeepLearning/mnt/shixiansheng/GuangDong`
+> 项目路径: `/data/workspace/GuangDong`
 
 ---
 
@@ -199,7 +199,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "Data", "Processed", "CMAQ")
 OUTPUT_DIR = os.path.join(BASE_DIR, "Picture", "Map_Diff", "CMAQ")
 MODEL_FILE = os.path.join(BASE_DIR, "Data", "Boundary", "GRIDCRO2D_2000121_GuangDongD3")
-BOUNDARY_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+BOUNDARY_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
 
 DATA_SOURCE = "cmaq"       # "cmaq" | "mcip" | "emission"
 VARIABLES = ["O3", "PM2.5", "O3_Days", "PM2.5_Days"]
