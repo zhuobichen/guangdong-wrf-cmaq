@@ -387,59 +387,59 @@ def process_cmaq_comparison(file_config, var_name, model_file, boundary_file, sa
 CMAQ_COMPARISON_CONFIGS = [
     # CMAQ模拟效果2000 (CASE1 - CASE3)
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',
     #     'CASE1-CASE3_Jul'  # CASE1 - CASE3
     # ],
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',
     #     'CASE1-CASE3_Jan'  # CASE1 - CASE3
     # ],
     
     # # 气象变化影响 (CASE1 - CASE2)
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2023met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2023met]_01.csv',
     #     'CASE1-CASE2_Jan'  # CASE1 - CASE2
     # ],
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2023met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2023met]_07.csv',
     #     'CASE1-CASE2_Jul'  # CASE1 - CASE2
     # ],
     
     #清单变化影响 (CASE1 - CASE4)
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2000met]_01.csv',
+        '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_01.csv',
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2000met]_01.csv',
         'CASE1-CASE4_Jan'  # CASE1 - CASE4
     ],
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',
-        '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2000met]_07.csv',
+        '/data/workspace/GuangDong/cmaqout_processed/2000_Emission[2000met]_07.csv',
+        '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2000met]_07.csv',
         'CASE1-CASE4_Jul'  # CASE1 - CASE4
     ],
 
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2060_Emission[2060met]_07.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2060_Emission[2060met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',
     #     'CASE5-CASE3_Jul'  # CASE5 - CASE3
     # ],
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2060_Emission[2060met]_01.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2060_Emission[2060met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',
     #     'CASE5-CASE3_Jan'  # CASE5 - CASE3
     # ],
 
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2030_Emission[2030met]_07.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2030_Emission[2030met]_07.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_07.csv',
     #     'CASE6-CASE3_Jul'  # CASE6 - CASE3
     # ],
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2030_Emission[2030met]_01.csv',
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2030_Emission[2030met]_01.csv',
+    #     '/data/workspace/GuangDong/cmaqout_processed/2023_Emission[2023met]_01.csv',
     #     'CASE6-CASE3_Jan'  # CASE6 - CASE3
     # ],
     
@@ -452,9 +452,9 @@ def main():
     print("=" * 70)
 
     # === 配置参数 ===
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-    BOUNDARY_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
-    SAVE_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/Emission_Comparison_Plots_CN"
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    BOUNDARY_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+    SAVE_DIR = "/data/workspace/GuangDong/Emission_Comparison_Plots_CN"
 
     # 选择要处理的变量
     # VARIABLES_TO_PROCESS = ['O3', 'PM2.5', 'O3_Days', 'PM2.5_Days']
