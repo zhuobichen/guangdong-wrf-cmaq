@@ -1,6 +1,6 @@
 # GuangDong Code and Data Documentation
 
-**Base Path**: `/DeepLearning/mnt/shixiansheng/GuangDong`
+**Base Path**: `/data/workspace/GuangDong`
 
 ## 📋 快速索引
 
@@ -159,7 +159,7 @@
 |------|------|
 | **功能** | 自动检测和处理GD排放清单中的PM2.5数据，基于时间模式计算月平均值 |
 | **输入文件** | EM_AV_YYYYDDD.nc (GD排放清单文件) |
-| **数据目录** | `/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/GD2060/` |
+| **数据目录** | `/data/workspace/GuangDong/emissionlist/GD2060/` |
 | **PM2.5物种** | PEC, POC, PNO3, PSO4, PCL, PNH4, PNA, PMG, PK, PCA, PNCOM, PFE, PAL, PSI, PTI, PMN, PH2O, PMOTHR |
 | **选择策略** | 自动选择目标月份的第一个周五、周六、周日文件 |
 | **时间模式** | 区分工作日、周六、周日的排放特征 |
