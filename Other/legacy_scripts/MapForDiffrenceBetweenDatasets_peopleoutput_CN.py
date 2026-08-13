@@ -128,14 +128,14 @@ PM25_VARIABLE_CONFIG = VARIABLE_CONFIGS
 COMPARISON_CONFIGS = [
     # 2000 vs 2023 对比
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_200001_ALL_OnlyGuangDong.csv',
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202301_ALL_OnlyGuangDong.csv',
+        '/data/workspace/GuangDong/emissionlist/EM_200001_ALL_OnlyGuangDong.csv',
+        '/data/workspace/GuangDong/emissionlist/EM_202301_ALL_OnlyGuangDong.csv',
         2000, 2023,
         '2000_minus_2023'
     ],
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_200007_ALL_OnlyGuangDong.csv',
-        '/DeepLearning/mnt/shixiansheng/GuangDong/emissionlist/EM_202307_ALL_OnlyGuangDong.csv',
+        '/data/workspace/GuangDong/emissionlist/EM_200007_ALL_OnlyGuangDong.csv',
+        '/data/workspace/GuangDong/emissionlist/EM_202307_ALL_OnlyGuangDong.csv',
         2000, 2023,
         '2000_minus_2023'
     ],
@@ -438,9 +438,9 @@ def main():
     print("=" * 70)
 
     # === 配置参数 ===
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-    BOUNDARY_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
-    SAVE_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/PeopleEmission_Plots_CN"
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    BOUNDARY_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+    SAVE_DIR = "/data/workspace/GuangDong/PeopleEmission_Plots_CN"
 
     # 选择要处理的变量
     # 可以根据需要修改这些列表
