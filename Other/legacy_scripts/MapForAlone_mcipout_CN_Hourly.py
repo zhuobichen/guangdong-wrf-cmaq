@@ -504,10 +504,10 @@ if __name__ == "__main__":
 
     # -------------------------- 核心参数配置 --------------------------
     # 1. 基础路径配置
-    ROOT_METRICS_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed_hourly"  # 多年指标文件根目录
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"  # 模型网格文件
-    BOUNDARY_JSON_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json" # 边界文件
-    SAVE_ROOT_PATH = "/DeepLearning/mnt/shixiansheng/GuangDong/Mcip_Alone_Plots_CN"  # 结果保存根目录
+    ROOT_METRICS_DIR = "/data/workspace/GuangDong/mcipout_processed_hourly"  # 多年指标文件根目录
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"  # 模型网格文件
+    BOUNDARY_JSON_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json" # 边界文件
+    SAVE_ROOT_PATH = "/data/workspace/GuangDong/Mcip_Alone_Plots_CN"  # 结果保存根目录
 
     # 2. 年份与月份配置
     TARGET_YEARS = [2030]  # 需要处理的年份
