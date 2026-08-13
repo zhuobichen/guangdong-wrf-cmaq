@@ -109,18 +109,18 @@ def plot_pm25_diff_map(data_2000, data_2023, model_file, save_path, boundary_jso
 
 if __name__ == "__main__":
     # 核心输入参数 - 直接指定两个数据文件路径
-    file_2000 = "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2000_PM25-01-avg_with_row_col.csv"
-    file_2023 = "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed/2023_PM25-01-avg_with_row_col.csv"
+    file_2000 = "/data/workspace/GuangDong/cmaqout_processed/2000_PM25-01-avg_with_row_col.csv"
+    file_2023 = "/data/workspace/GuangDong/cmaqout_processed/2023_PM25-01-avg_with_row_col.csv"
     
     # 模型文件路径（请根据实际情况确认是否需要修改）
-    model_file = r"/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    model_file = r"/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
     
     # 边界文件路径（若绘制广东地图，建议替换为广东的边界JSON文件，此处先用原有路径占位）
-    # boundary_file = "/DeepLearning/mnt/shixiansheng/GuangDong/china.json"
-    boundary_file = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"  # 边界文件
+    # boundary_file = "/data/workspace/GuangDong/china.json"
+    boundary_file = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"  # 边界文件
     
     # 图像保存路径
-    save_dir = "/DeepLearning/mnt/shixiansheng/GuangDong/PM25_Comparison_Plots"
+    save_dir = "/data/workspace/GuangDong/PM25_Comparison_Plots"
 
     # 读取数据
     try:
