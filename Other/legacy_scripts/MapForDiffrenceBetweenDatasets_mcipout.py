@@ -85,56 +85,56 @@ VARIABLE_CONFIGS = {
 COMPARISON_CONFIGS = [
     # 示例配置：第一个文件减第二个文件
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2000_mcipout_07.csv',  # 文件1
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件2
+        '/data/workspace/GuangDong/mcipout_processed/2000_mcipout_07.csv',  # 文件1
+        '/data/workspace/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件2
         2000,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2000_minus_2023'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2000_mcipout_01.csv',  # 文件1
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2023_mcipout_01.csv',  # 文件2
+        '/data/workspace/GuangDong/mcipout_processed/2000_mcipout_01.csv',  # 文件1
+        '/data/workspace/GuangDong/mcipout_processed/2023_mcipout_01.csv',  # 文件2
         2000,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2000_minus_2023'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2030_mcipout_01.csv',  # 文件1
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2023_mcipout_01.csv',  # 文件2
+        '/data/workspace/GuangDong/mcipout_processed/2030_mcipout_01.csv',  # 文件1
+        '/data/workspace/GuangDong/mcipout_processed/2023_mcipout_01.csv',  # 文件2
         2030,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2030_minus_2023'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2030_mcipout_07.csv',  # 文件1
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件2
+        '/data/workspace/GuangDong/mcipout_processed/2030_mcipout_07.csv',  # 文件1
+        '/data/workspace/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件2
         2030,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2030_minus_2023'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2060_mcipout_01.csv',  # 文件1
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2023_mcipout_01.csv',  # 文件2
+        '/data/workspace/GuangDong/mcipout_processed/2060_mcipout_01.csv',  # 文件1
+        '/data/workspace/GuangDong/mcipout_processed/2023_mcipout_01.csv',  # 文件2
         2060,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2060_minus_2023'  # 输出文件后缀
     ],
 
     [
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2060_mcipout_07.csv',  # 文件1
-        '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件2
+        '/data/workspace/GuangDong/mcipout_processed/2060_mcipout_07.csv',  # 文件1
+        '/data/workspace/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件2
         2060,        # 文件1对应年份
         2023,        # 文件2对应年份
         '2060_minus_2023'  # 输出文件后缀
     ],
 
     # [
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件1
-    #     '/DeepLearning/mnt/shixiansheng/GuangDong/mcipout_processed/2060_mcipout_07.csv',  # 文件2
+    #     '/data/workspace/GuangDong/mcipout_processed/2023_mcipout_07.csv',  # 文件1
+    #     '/data/workspace/GuangDong/mcipout_processed/2060_mcipout_07.csv',  # 文件2
     #     2023,        # 文件1对应年份
     #     2060,        # 文件2对应年份
     #     '2023_minus_2060'  # 输出文件后缀
@@ -428,9 +428,9 @@ def main():
     print("开始气象变量差异图批量绘制...")
 
     # === 配置参数 ===
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-    BOUNDARY_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
-    SAVE_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/Mcip_Comparison_Plots"
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    BOUNDARY_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+    SAVE_DIR = "/data/workspace/GuangDong/Mcip_Comparison_Plots"
 
     # 选择要处理的变量
     # 可以根据需要修改这些列表
