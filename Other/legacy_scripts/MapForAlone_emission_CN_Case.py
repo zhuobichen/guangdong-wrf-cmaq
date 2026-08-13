@@ -424,10 +424,10 @@ if __name__ == "__main__":
     print("="*70)
 
     # -------------------------- 核心参数配置 --------------------------
-    ROOT_METRICS_DIR = "/DeepLearning/mnt/shixiansheng/GuangDong/cmaqout_processed"
-    MODEL_FILE = "/DeepLearning/mnt/shixiansheng/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
-    BOUNDARY_JSON_FILE = "/DeepLearning/mnt/shixiansheng/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
-    SAVE_ROOT_PATH = "/DeepLearning/mnt/shixiansheng/GuangDong/Emission_Alone_Plots_CN"
+    ROOT_METRICS_DIR = "/data/workspace/GuangDong/cmaqout_processed"
+    MODEL_FILE = "/data/workspace/GuangDong/GRIDCRO2D_2000121_GuangDongD3"
+    BOUNDARY_JSON_FILE = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+    SAVE_ROOT_PATH = "/data/workspace/GuangDong/Emission_Alone_Plots_CN"
 
     # 图例配置
     UNIFIED_VALUE_RANGE = (30, 59)
