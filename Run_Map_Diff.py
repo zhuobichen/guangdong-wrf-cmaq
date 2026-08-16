@@ -17,6 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from Core_Map import run_diff_map_pipeline
+from paths import BOUNDARY_JSON
 
 # ============================================================
 # 项目路径配置
@@ -24,7 +25,7 @@ from Core_Map import run_diff_map_pipeline
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 MODEL_FILE = str(PROJECT_ROOT / "Data" / "Boundary" / "GRIDCRO2D_2000121_GuangDongD3")
-BOUNDARY_JSON = "/data/workspace/DataFusion_China/China_Data/RegionAndPopulation_Data/Chinajson/china_cities.json"
+# BOUNDARY_JSON 由 paths.py 导入（可用环境变量 GUANGDONG_BOUNDARY_JSON 覆盖）
 
 # CMAQ 数据目录
 CMAQ_DATA_DIR = str(PROJECT_ROOT / "Data" / "Processed" / "CMAQ")
